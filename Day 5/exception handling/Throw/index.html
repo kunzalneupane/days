@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw</title>
+</head>
+<body>
+    <p id="demo"> </p>
+    <script>
+        try{
+            throw new Error("something went wrong");
+        }
+        catch(error){
+            console.log("caught an error:",error.message);
+            document.getElementById("demo").innerHTML = "An error has occurred:" + error.message;
+
+        }
+    </script>
+</body>
+</html>

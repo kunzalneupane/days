@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch Example</title>
+</head>
+<body>
+
+<p id="result"></p>
+
+<script>
+    try {
+       let num = 18;
+       let result = num / 2;
+       console.log(result);
+       document.getElementById("result").innerHTML = "result:" + result ;
+    }
+    catch(error){
+        console.log("Error cought:",error.message);
+        document.getElementById("result").innerHTML = "An error occured:" + error.message;
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Object</title>
+</head>
+<body>
+    <p id="demo"> </p>
+    <script>
+    function dividesNumber(a , b){
+        if(b===0){
+            throw new Error("cannot divide by zero");
+        }
+        return a/b;
+
+    }
+    try{
+        let result = dividesNumber(10 , 0);
+        console.log("result:" ,result);
+    }
+    catch(error){
+        console.log("error name:",error.name);
+        console.log("error message:", error.message);
+        console.log("error stack:", error.stack);
+        
+    }
+    
+    </script>
+</body>
+
+
+</html>
