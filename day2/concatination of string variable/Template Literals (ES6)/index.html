@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+  <p id="demo"> </p>
     <script>
       let firstName = "kunjal";
       let lastName = "neupane";
       let fullName = `${firstName} ${lastName}`;
       console.log(fullName); 
+      document.getElementById("demo").innerHTML = "fullname is:" + fullName;
 
 
     </script>

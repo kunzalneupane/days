@@ -6,10 +6,11 @@
     <title>loop </title>
 </head>
 <body>
+    <p id="demo"> </p>
     <script>
        let i = 0;
         while (i < 10){
-            
+            document.getElementById("demo").innerHTML ="result:" + i;
             console.log(i);
 
             i++;
