@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+
+<body>
+    
+    <label> first number:</label>
+    <input type="number" id="firstnum">
+    <label> second number:</label>
+    <input type="number" id="secondnum">
+    <input type = "submit" value = "sum"  onclick="sum()"/>
+    <p id="result"></p>
+    
+
+</body>
+
+</html>
+
+<script>
+   
+
+   const sum = () => {
+            
+            let firstnum = parseInt(document.getElementById("firstnum").value);
+            let secondnum = parseInt(document.getElementById("secondnum").value);
+
+        
+            if (isNaN(firstnum) || isNaN(secondnum)) {
+                document.getElementById("result").innerHTML = "Please enter valid numbers.";
+                return;
+            }
+
+            
+            let result = firstnum + secondnum;
+
+            
+            document.getElementById("result").innerHTML = `The sum of two numbers is: ${result}`;
+        };
+
+       
+   </script>
