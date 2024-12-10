@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sparse</title>
+</head>
+<body>
+    <button onclick="sparse()">sparse</button>
+    <p id="demo"> </p>
+</body>
+</html>
+<script>
+    let sparseArray = [];
+    sparseArray[3] = "hello";
+    sparseArray[5] = "morning";
+
+    function sparse() {
+        document.getElementById("demo").innerHTML = 
+        `SparseArray: ${JSON.stringify(sparseArray)}
+        Array length: ${sparseArray.length}
+        `;
+    }
+        
+</script>

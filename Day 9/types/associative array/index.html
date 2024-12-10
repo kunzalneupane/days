@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>associative</title>
+</head>
+<body>
+    <button onclick="result()"> clickme</button>
+    <p id="demo"> </p>
+</body>
+</html>
+<script>
+    let assocArray = {
+        name : "kunjal",
+        age : 22,
+        address: "damak"
+
+
+    };
+
+    function result(){
+        document.getElementById("demo").innerText = `Name: ${assocArray["name"]}`;
+    }
+</script>

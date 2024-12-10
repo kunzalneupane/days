@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>push element</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try</button>
+    <p id="demo"> </p>
+</body>
+</html>
+<script>
+    let fruits = ["apple","orange","banana"];
+    document.getElementById("demo").innerHTML = fruits;
+
+    function myFunction(){
+        fruits.push("grapes ","mango");
+        document.getElementById("demo").innerHTML = fruits; 
+    }
+
+</script>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function Example</title>
+</head>
+<body>
+    <button id="greetButton">Click me </button>
+</body>
+</html>
+<script>
+    
+    window.onload = function() {
+        document.getElementById("greetButton").onclick = function() {
+            alert("Hello, welcome to the page!");
+        };
+    };
+</script>

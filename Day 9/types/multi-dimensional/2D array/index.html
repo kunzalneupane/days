@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D</title>
+</head>
+<body>
+    <button onclick="result()"> Result</button>
+    <p id="demo"> </p>
+
+
+</body>
+</html>
+<script>
+    let matrix= [
+        [1, 2, 4],
+        [2, 8, 5],
+        [8, 6, 4]
+    ];
+    function result(){
+        let element = matrix[0][1];
+    document.getElementById("demo").innerText = `element is: ${element}`;
+    }
+</script>
