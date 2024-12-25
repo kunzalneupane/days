@@ -1,17 +1,37 @@
-function getData(dataId){
-    return new Promise ((resolve, reject) =>{
-        setTimeout(() =>{
-        console.log("data", dataId);
-        resolve("sucess");
-        
-     }, 3000);
-      });
+function task1() {
+   return new Promise(resolve => {
+       setTimeout(() => {
+           console.log("Task 1 completed");
+           resolve();
+       }, 1000);
+   });
 }
 
- async function getAllData(){
-    await getData(1);
-    await getData(2);
-    await getData(3);
-    await getData(4);
+function task2() {
+   return new Promise(resolve => {
+       setTimeout(() => {
+           console.log("Task 2 completed");
+           resolve();
+       }, 2000);
+   });
+}
 
- }
+function task3() {
+   return new Promise(resolve => {
+       setTimeout(() => {
+           console.log("Task 3 completed");
+           resolve();
+       }, 3000);
+   });
+}
+
+
+
+async function runTasks() {
+   await task1();
+   await task2();
+   await task3();
+   console.log("All tasks completed");
+}
+
+runTasks();
